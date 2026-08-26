@@ -1,16 +1,16 @@
 return {
     vendingmachine = {
-        version = "1.0.3",
-        releaseDate = "2026-08-24",
-        critical = true,
+        version = "1.0.4",
+        releaseDate = "2026-08-26",
+        critical = false,
         download = "https://portal.cfx.re/assets/granted-assets",
         changelog = {
-            { text = "Machine animation no longer plays on every player on the server only the one actually using it.", link = nil },
-            { text = "Players no longer get permanently stuck after buying from the edge of a machine's range.", link = nil },
-            { text = "Machines no longer duplicate on character switch.", link = nil },
-            { text = "The walk-up animation now plays properly.", link = nil },
-            { text = "Machines on curbs and uneven ground are detected correctly again.", link = nil },
-            { text = "Camera and mouse no longer stay locked if the resource restarts with a menu open.", link = nil },
+            { text = "Players no longer get permanently frozen after purchasing an item.", link = nil },
+            { text = "Purchases no longer hang when the drink prop fails to spawn.", link = nil },
+            { text = "Players are now released properly if they die or the resource restarts mid-purchase.", link = nil },
+            { text = "Players can no longer enter and drive a vehicle during the purchase animation.", link = nil },
+            { text = "Spamming the buy button no longer overlaps two purchases and breaks the animation.", link = nil },
+            { text = "Money is no longer taken without the item being delivered if the purchase is interrupted.", link = nil },
         },
         missingFeatures = {},
         removed = {}
